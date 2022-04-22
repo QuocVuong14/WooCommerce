@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: $font-size;
+    font-family: $font-family;
+  }
+  @mixin max_width($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+      @content
+    }
+  }
+  .container {
+    max-width: $w_container;
+    width: 100%;
+    margin: 0 auto;
+  }
